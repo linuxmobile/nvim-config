@@ -41,6 +41,10 @@ return packer.startup(function(use)
 	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("moll/vim-bbye") -- Delete buffers easily
 	use("nvim-lualine/lualine.nvim") -- Easy and configurable statusbar
+	use("akinsho/toggleterm.nvim") -- Toggle terminal
+	use("lukas-reineke/indent-blankline.nvim") -- Indented guidelines
+	use("goolord/alpha-nvim") -- Alpha greeter
+	use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
