@@ -53,6 +53,19 @@ return packer.startup(function(use)
 	use("xiyaowong/nvim-cursorword") -- Highlight cursor word
 	use("simrat39/symbols-outline.nvim") -- A tree like view for symbols
 	use("winston0410/cmd-parser.nvim") -- Input some cmds
+	use("lewis6991/impatient.nvim") -- Improve nvim startup
+	use("kosayoda/nvim-lightbulb") -- Nicer code actions signs
+
+	use({
+		"folke/which-key.nvim",
+		config = function()
+			require("config.which-key").setup()
+		end,
+	})
+	use({
+		"weilbith/nvim-code-action-menu",
+		cmd = "CodeActionMenu",
+	}) -- Better code action menu
 	use({
 		"akinsho/bufferline.nvim",
 		tag = "*",
