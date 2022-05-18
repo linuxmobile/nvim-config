@@ -51,6 +51,18 @@ return packer.startup(function(use)
 	use("max397574/better-escape.nvim") -- Escape from instert mode fast
 	use("folke/todo-comments.nvim") -- A beautiful todo comments
 	use("xiyaowong/nvim-cursorword") -- Highlight cursor word
+	use("simrat39/symbols-outline.nvim") -- A tree like view for symbols
+	use("winston0410/cmd-parser.nvim") -- Input some cmds
+	use({
+		"akinsho/bufferline.nvim",
+		tag = "*",
+	}) -- Beautiful bufferline
+	use({
+		"ellisonleao/glow.nvim",
+		branch = "main",
+	}) -- Amazing markdown viewer
+
+
 
 
 	-- Automatically set up your configuration after cloning packer.nvim
