@@ -63,6 +63,61 @@ return packer.startup(function(use)
 	}) -- Amazing markdown viewer
 
 
+	-- █▀▀ █▀▄▀█ █▀█   █▀█ █░░ █░█ █▀▀ █ █▄░█ █▀
+	-- █▄▄ █░▀░█ █▀▀   █▀▀ █▄▄ █▄█ █▄█ █ █░▀█ ▄█
+
+	use("hrsh7th/nvim-cmp") -- The completion plugin
+	use("hrsh7th/cmp-buffer") -- buffer completions
+	use("hrsh7th/cmp-path") -- path completions
+	use("hrsh7th/cmp-cmdline") -- cmdline completions
+	use("saadparwaiz1/cmp_luasnip") -- snippet completions
+	use("hrsh7th/cmp-nvim-lsp")
+	use("hrsh7th/cmp-calc")
+	use("hrsh7th/cmp-nvim-lsp-signature-help")
+
+
+	-- █▀ █▄░█ █ █▀█ █▀█ █▀▀ ▀█▀ █▀
+	-- ▄█ █░▀█ █ █▀▀ █▀▀ ██▄ ░█░ ▄█
+	
+	use("L3MON4D3/LuaSnip") --snippet engine
+	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
+
+	-- █░░ █▀ █▀█
+	-- █▄▄ ▄█ █▀▀
+
+	use("williamboman/nvim-lsp-installer")
+	use("neovim/nvim-lspconfig") -- enable LSP
+	use("tamago324/nlsp-settings.nvim") -- language server settings defined in json for
+	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
+	use("onsails/lspkind.nvim")
+
+	-- ▀█▀ █▀▀ █░░ █▀▀ █▀ █▀▀ █▀█ █▀█ █▀▀
+	--  █░ ██▄ █▄▄ ██▄ ▄█ █▄▄ █▄█ █▀▀ ██▄
+
+	use("nvim-telescope/telescope.nvim")
+
+	-- ▀█▀ █▀█ █▀▀ █▀▀ █▀ █ ▀█▀ ▀█▀ █▀▀ █▀█
+	-- ░█░ █▀▄ ██▄ ██▄ ▄█ █ ░█░ ░█░ ██▄ █▀▄
+
+	use({
+		"nvim-treesitter/nvim-treesitter",
+		run = ":TSUpdate",
+	})
+	use("p00f/nvim-ts-rainbow")
+	use("nvim-treesitter/nvim-treesitter-refactor")
+	use("nvim-treesitter/nvim-treesitter-textobjects")
+	use({
+		"m-demare/hlargs.nvim",
+		config = function()
+			require("hlargs").setup()
+		end,
+	})
+
+	-- █▀▀ █ ▀█▀
+	-- █▄█ █ ░█░
+
+	use("lewis6991/gitsigns.nvim")
+	use("TimUntersberger/neogit")
 
 
 	-- Automatically set up your configuration after cloning packer.nvim
