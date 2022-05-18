@@ -1,6 +1,7 @@
 local fn = vim.fn
 
--- Automatically install packer
+-- █ █▄░█ █▀ ▀█▀ ▄▀█ █░░ █░░   █▀█ ▄▀█ █▀▀ █▄▀ █▀▀ █▀█
+-- █ █░▀█ ▄█ ░█░ █▀█ █▄▄ █▄▄   █▀▀ █▀█ █▄▄ █░█ ██▄ █▀▄
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
 	PACKER_BOOTSTRAP = fn.system({
@@ -21,7 +22,8 @@ if not status_ok then
 	return
 end
 
--- Have packer use a popup window
+-- █▀█ ▄▀█ █▀▀ █▄▀ █▀▀ █▀█   █▀█ █▀█ █▀█ █░█ █▀█
+-- █▀▀ █▀█ █▄▄ █░█ ██▄ █▀▄   █▀▀ █▄█ █▀▀ █▄█ █▀▀
 packer.init({
 	display = {
 		open_fn = function()
@@ -33,6 +35,8 @@ packer.init({
 return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- Have packer manage itself
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
+	use("kyazdani42/nvim-web-devicons") -- Add filetype icons like nerdfonts
+	use("norcalli/nvim-base16.lua") -- Enable base64 themes
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
