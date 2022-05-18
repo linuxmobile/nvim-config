@@ -55,25 +55,19 @@ return packer.startup(function(use)
 	use("winston0410/cmd-parser.nvim") -- Input some cmds
 	use("lewis6991/impatient.nvim") -- Improve nvim startup
 	use("kosayoda/nvim-lightbulb") -- Nicer code actions signs
-
-	use({
-		"folke/which-key.nvim",
-		config = function()
-			require("config.which-key").setup()
-		end,
-	})
-	use({
-		"weilbith/nvim-code-action-menu",
-		cmd = "CodeActionMenu",
-	}) -- Better code action menu
-	use({
-		"akinsho/bufferline.nvim",
-		tag = "*",
-	}) -- Beautiful bufferline
+	use("nvim-lua/popup.nvim") -- Some popup tool
+	use("folke/which-key.nvim")
+	use("weilbith/nvim-code-action-menu") -- Better code action menu
+	use("akinsho/bufferline.nvim") -- Beautiful bufferline
 	use({
 		"ellisonleao/glow.nvim",
 		branch = "main",
 	}) -- Amazing markdown viewer
+
+	-- █▀▀ █▀█ █░░ █▀█ █▀█ █▀ █▀▀ █░█ █▀▀ █▀▄▀█ █▀▀
+	-- █▄▄ █▄█ █▄▄ █▄█ █▀▄ ▄█ █▄▄ █▀█ ██▄ █░▀░█ ██▄
+
+	use("EdenEast/nightfox.nvim")
 
 
 	-- █▀▀ █▀▄▀█ █▀█   █▀█ █░░ █░█ █▀▀ █ █▄░█ █▀
@@ -108,6 +102,8 @@ return packer.startup(function(use)
 	--  █░ ██▄ █▄▄ ██▄ ▄█ █▄▄ █▄█ █▀▀ ██▄
 
 	use("nvim-telescope/telescope.nvim")
+
+	use("nvim-telescope/telescope-fzf-native.nvim")
 
 	-- ▀█▀ █▀█ █▀▀ █▀▀ █▀ █ ▀█▀ ▀█▀ █▀▀ █▀█
 	-- ░█░ █▀▄ ██▄ ██▄ ▄█ █ ░█░ ░█░ ██▄ █▀▄
