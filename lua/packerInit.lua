@@ -45,6 +45,12 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim") -- Indented guidelines
 	use("goolord/alpha-nvim") -- Alpha greeter
 	use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
+	use("Pocco81/AutoSave.nvim") -- A savior
+	use("norcalli/nvim-colorizer.lua") -- Colorizes color codes
+	use("rcarriga/nvim-notify") -- Notify daemon
+	use("max397574/better-escape.nvim") -- Escape from instert mode fast
+	use("folke/todo-comments.nvim") -- A beautiful todo comments
+
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
