@@ -43,13 +43,14 @@ return packer.startup(function(use)
 	use("nvim-lualine/lualine.nvim") -- Easy and configurable statusbar
 	use("akinsho/toggleterm.nvim") -- Toggle terminal
 	use("lukas-reineke/indent-blankline.nvim") -- Indented guidelines
-	use("goolord/alpha-nvim") -- Alpha greeter
+	use("mhinz/vim-startify") -- Better than Alpha
 	use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
 	use("Pocco81/AutoSave.nvim") -- A savior
 	use("norcalli/nvim-colorizer.lua") -- Colorizes color codes
 	use("rcarriga/nvim-notify") -- Notify daemon
 	use("max397574/better-escape.nvim") -- Escape from instert mode fast
 	use("folke/todo-comments.nvim") -- A beautiful todo comments
+	use("xiyaowong/nvim-cursorword") -- Highlight cursor word
 
 
 	-- Automatically set up your configuration after cloning packer.nvim
