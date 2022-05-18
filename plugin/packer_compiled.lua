@@ -160,6 +160,11 @@ _G.packer_plugins = {
     path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/hlargs.nvim",
     url = "https://github.com/m-demare/hlargs.nvim"
   },
+  ["impatient.nvim"] = {
+    loaded = true,
+    path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/impatient.nvim",
+    url = "https://github.com/lewis6991/impatient.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -179,6 +184,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nlsp-settings.nvim"] = {
     loaded = true,
@@ -205,6 +215,11 @@ _G.packer_plugins = {
     path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-code-action-menu"] = {
+    loaded = true,
+    path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/nvim-code-action-menu",
+    url = "https://github.com/weilbith/nvim-code-action-menu"
+  },
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
@@ -214,6 +229,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/nvim-cursorword",
     url = "https://github.com/xiyaowong/nvim-cursorword"
+  },
+  ["nvim-lightbulb"] = {
+    loaded = true,
+    path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
+    url = "https://github.com/kosayoda/nvim-lightbulb"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -265,10 +285,20 @@ _G.packer_plugins = {
     path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
+  },
   ["symbols-outline.nvim"] = {
     loaded = true,
     path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
     url = "https://github.com/simrat39/symbols-outline.nvim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -294,6 +324,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/vim-startify",
     url = "https://github.com/mhinz/vim-startify"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/home/linuxmobile/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
