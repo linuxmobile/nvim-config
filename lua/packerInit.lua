@@ -37,6 +37,8 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 	use("kyazdani42/nvim-web-devicons") -- Add filetype icons like nerdfonts
 	use("norcalli/nvim-base16.lua") -- Enable base64 themes
+	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
+	use("numToStr/Comment.nvim") -- Easily comment stuff
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
