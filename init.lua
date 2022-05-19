@@ -1,5 +1,5 @@
 require("packerInit")
-require("colorscheme")
+require("colors")
 require("keymaps")
 require("options")
-require("autocmds")
+require("autocommands")
