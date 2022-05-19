@@ -58,6 +58,7 @@ return packer.startup(function(use)
 	use("nvim-lua/popup.nvim") -- Some popup tool
 	use("weilbith/nvim-code-action-menu") -- Better code action menu
 	use("akinsho/bufferline.nvim") -- Beautiful bufferline
+	use("monaqa/dial.nvim") -- :3
  
   -- █░█░█ █░█ █ █▀▀ █░█ █▄▀ █▀▀ █▄█
   -- ▀▄▀▄▀ █▀█ █ █▄▄ █▀█ █░█ ██▄ ░█░
