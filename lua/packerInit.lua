@@ -37,7 +37,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 	use("kyazdani42/nvim-web-devicons") -- Add filetype icons like nerdfonts
 	use("norcalli/nvim-base16.lua") -- Enable base64 themes
-	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
+	-- Autopairs, integrates with both cmp and treesitter
 	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("moll/vim-bbye") -- Delete buffers easily
 	use("nvim-lualine/lualine.nvim") -- Easy and configurable statusbar
@@ -68,6 +68,16 @@ return packer.startup(function(use)
 	-- █▄▄ █▄█ █▄▄ █▄█ █▀▄ ▄█ █▄▄ █▀█ ██▄ █░▀░█ ██▄
 
 	use("EdenEast/nightfox.nvim")
+
+	
+	-- █▀█ ▄▀█ █ █▀█ █▀
+	-- █▀▀ █▀█ █ █▀▄ ▄█
+	use({
+		"windwp/nvim-autopairs",
+		config = function()
+			require("plugins.configs.autopairs")
+		end,
+	})
 
 
 	-- █▀▀ █▀▄▀█ █▀█   █▀█ █░░ █░█ █▀▀ █ █▄░█ █▀
