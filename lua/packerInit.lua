@@ -37,13 +37,11 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 	use("kyazdani42/nvim-web-devicons") -- Add filetype icons like nerdfonts
 	use("norcalli/nvim-base16.lua") -- Enable base64 themes
-	-- Autopairs, integrates with both cmp and treesitter
 	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("moll/vim-bbye") -- Delete buffers easily
 	use("nvim-lualine/lualine.nvim") -- Easy and configurable statusbar
 	use("akinsho/toggleterm.nvim") -- Toggle terminal
 	use("lukas-reineke/indent-blankline.nvim") -- Indented guidelines
-	use("mhinz/vim-startify") -- Better than Alpha
 	use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
 	use("Pocco81/AutoSave.nvim") -- A savior
 	use("norcalli/nvim-colorizer.lua") -- Colorizes color codes
@@ -59,6 +57,16 @@ return packer.startup(function(use)
 	use("weilbith/nvim-code-action-menu") -- Better code action menu
 	use("akinsho/bufferline.nvim") -- Beautiful bufferline
 	use("monaqa/dial.nvim") -- :3
+
+
+  -- ▄▀█ █░░ █▀█ █░█ ▄▀█
+  -- █▀█ █▄▄ █▀▀ █▀█ █▀█
+  use({
+		"goolord/alpha-nvim",
+		config = function()
+			require("plugins.configs.alpha")
+		end,
+	})
 
   -- █▄░█ █▀▀ █▀█ ▀█▀ █▀█ █▀▀ █▀▀
   -- █░▀█ ██▄ █▄█ ░█░ █▀▄ ██▄ ██▄
