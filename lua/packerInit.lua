@@ -59,7 +59,20 @@ return packer.startup(function(use)
 	use("weilbith/nvim-code-action-menu") -- Better code action menu
 	use("akinsho/bufferline.nvim") -- Beautiful bufferline
 	use("monaqa/dial.nvim") -- :3
- 
+
+  -- █▄░█ █▀▀ █▀█ ▀█▀ █▀█ █▀▀ █▀▀
+  -- █░▀█ ██▄ █▄█ ░█░ █▀▄ ██▄ ██▄
+  use({
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v2.x",
+		requires = {
+			"MunifTanjim/nui.nvim",
+		},
+		config = function()
+			require("plugins.configs.neotree")
+		end,
+	})
+
   -- █░█░█ █░█ █ █▀▀ █░█ █▄▀ █▀▀ █▄█
   -- ▀▄▀▄▀ █▀█ █ █▄▄ █▀█ █░█ ██▄ ░█░
   use({
@@ -78,7 +91,7 @@ return packer.startup(function(use)
 
 	use("EdenEast/nightfox.nvim")
 
-	
+
 	-- █▀█ ▄▀█ █ █▀█ █▀
 	-- █▀▀ █▀█ █ █▀▄ ▄█
 	use({
@@ -104,7 +117,7 @@ return packer.startup(function(use)
 
 	-- █▀ █▄░█ █ █▀█ █▀█ █▀▀ ▀█▀ █▀
 	-- ▄█ █░▀█ █ █▀▀ █▀▀ ██▄ ░█░ ▄█
-	
+
 	use("L3MON4D3/LuaSnip") --snippet engine
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
